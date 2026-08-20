@@ -14,7 +14,7 @@ const DEFAULT_ELMASSA_DATA = {
     SK_UMROH: 'No. 12042023901230001 (Kemenag RI)',
     SK_HAJI: 'No. 12042023901230002 (PIHK Resmi)',
     OFFICE_ADDRESS: 'Menara El Massa, Jl. TB Simatupang Kav. 88, Cilandak, Jakarta Selatan 12430',
-    WHATSAPP_NUMBER: '6281249476778',
+    WHATSAPP_NUMBER: '6281171715125',
     WHATSAPP_CHANNEL: 'https://whatsapp.com/channel/0029VbElMassaOfficial',
     INSTAGRAM_URL: 'https://instagram.com/elmassatour',
     LAST_SEAT_UPDATE: new Date().toISOString()

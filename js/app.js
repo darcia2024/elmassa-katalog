@@ -198,7 +198,7 @@ function elMassaApp() {
     // LocalStorage & Data Layer
     loadStorageData() {
       try {
-        const stored = localStorage.getItem('EL_MASSA_APP_DATA_V22');
+        const stored = localStorage.getItem('EL_MASSA_APP_DATA_V23');
         if (stored) {
           const parsed = JSON.parse(stored);
           this.settings = parsed.settings || DEFAULT_ELMASSA_DATA.settings;
@@ -231,7 +231,7 @@ function elMassaApp() {
         defaultInclude: this.defaultInclude,
         defaultExclude: this.defaultExclude
       };
-      localStorage.setItem('EL_MASSA_APP_DATA_V22', JSON.stringify(dataToSave));
+      localStorage.setItem('EL_MASSA_APP_DATA_V23', JSON.stringify(dataToSave));
       this.rebuildScheduleFlatList();
     },
 
@@ -867,7 +867,7 @@ function elMassaApp() {
 
     getWhatsAppWaitingListUrl(pkg) {
       const p = pkg || this.lockedPackage;
-      const phone = this.settings.WHATSAPP_NUMBER || '6281249476778';
+      const phone = this.settings.WHATSAPP_NUMBER || '6281171715125';
       let text = `*Assalamu'alaikum Admin El Massa Tour & Travel*\n\n`;
       text += `Saya tertarik dan ingin masuk ke *Waiting List / Pra-Reservasi* untuk paket ibadah yang segera rilis berikut:\n\n`;
       text += `🕌 *Paket:* ${p ? p.title : '-'}\n`;
@@ -910,7 +910,7 @@ function elMassaApp() {
     getWhatsAppBookingUrl(pkg, sch) {
       const p = pkg || this.activeDetailPackage;
       const s = sch || this.activeSchedule;
-      const phone = this.settings.WHATSAPP_NUMBER || '6281249476778';
+      const phone = this.settings.WHATSAPP_NUMBER || '6281171715125';
 
       let text = `*Assalamu'alaikum Admin El Massa Tour & Travel*\n\n`;
       text += `Saya berminat mendaftar / konsultasi untuk paket ibadah berikut:\n`;
@@ -1021,7 +1021,7 @@ function elMassaApp() {
     },
 
     getWhatsAppCalculatorUrl() {
-      const phone = this.settings.WHATSAPP_NUMBER || '6281249476778';
+      const phone = this.settings.WHATSAPP_NUMBER || '6281171715125';
       const pkg = this.calculatorSelectedPackage;
       const sch = this.calculatorSelectedSchedule;
       const pax = this.calculator.pax;
@@ -1055,7 +1055,7 @@ function elMassaApp() {
       text += `Total Biaya: ${this.formatRupiahFull(this.calculatedTotalPackageCost)}\n`;
       text += `DP: ${this.formatRupiahFull(this.calculatedTotalDp)}\n`;
       text += `Tabungan Bulanan: ${this.formatRupiahFull(this.calculatedMonthlySaving)}/bln (~${this.formatRupiahFull(this.calculatedDailySaving)}/hari)\n`;
-      text += `\nKonsultasi Resmi El Massa: 081249476778`;
+      text += `\nKonsultasi Resmi El Massa: +62 811-7171-5125`;
 
       navigator.clipboard.writeText(text).then(() => {
         this.showToast('Ringkasan simulasi tabungan disalin ke clipboard!', 'success');
