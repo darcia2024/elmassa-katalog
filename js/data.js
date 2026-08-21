@@ -765,10 +765,10 @@ const DEFAULT_ELMASSA_DATA = {
     // -------------------------------------------------------------------------
     {
       id: 'pkg-06',
-      title: 'Umrah Sayang Orang Tua Bersama IMB (10 Hari)',
+      title: 'Umrah Sayang Orang Tua Bersama IMB (11 Hari)',
       category: 'Umroh Syawal',
-      tags: ['Start Pangkal Pinang', 'Sayang Orang Tua', 'Ibu Muda Berkarya', 'Mekkah 0 KM', 'Free Thaif', '10 Hari', 'Garuda / Saudia'],
-      programSummary: 'Lebih nyaman untuk orang tua tercinta bersama Komunitas Ibu Muda Berkarya (IMB). Keberangkatan Start Pangkal Pinang Maret 2027 (Syawal) Program 10 Hari. Maskapai Garuda Indonesia / Saudia Airlines. Hotel Makkah Olayan Ajyad (0 Meter ± 1 Menit Jalan Kaki ke Masjidil Haram) & Hotel Madinah Daar El Naeem. Free City Tour Thaif & Pabrik Parfum Mawar. Kuota Only 30 Seat. DP Mulai 5 Juta Saja.',
+      tags: ['Start Pangkal Pinang', 'Sayang Orang Tua', 'Ibu Muda Berkarya', 'Mekkah 0 KM', 'Free Thaif', '11 Hari', 'Garuda / Saudia'],
+      programSummary: 'Lebih nyaman untuk orang tua tercinta bersama Komunitas Ibu Muda Berkarya (IMB). Keberangkatan Start Pangkal Pinang 16 – 27 Maret 2027 (Syawal) Program 11 Hari. Maskapai Saudia Airlines (SV821/SV818) & Garuda GA136. Hotel Makkah Olayan Ajyad (0 Meter ± 1 Menit Jalan Kaki ke Masjidil Haram) & Hotel Madinah Daar El Naeem. Free City Tour Thaif & Pabrik Parfum Mawar, City Tour Jeddah & Corniche. Kuota Only 30 Seat. DP Mulai 5 Juta Saja.',
       flyerUrl: 'images/poster-umrah-sayang-orang-tua.png',
       thumbnailUrl: 'images/poster-umrah-sayang-orang-tua.png',
       activeStatus: 'Aktif',
@@ -921,14 +921,14 @@ const DEFAULT_ELMASSA_DATA = {
     },
 
     // -------------------------------------------------------------------------
-    // 7. Umrah Spesial Bersama Ust. Dr. H. Muhammad Kurnia, Lc., M.Ag. (10 Hari)
+    // 7. Umrah Spesial Bersama Ust. Dr. H. Muhammad Kurnia, Lc., M.Ag. (11 Hari)
     // -------------------------------------------------------------------------
     {
       id: 'pkg-07',
-      title: 'Umrah Bersama Ust. Dr. H. Muhammad Kurnia, Lc., M.Ag. (10 Hari)',
+      title: 'Umrah Bersama Ust. Dr. H. Muhammad Kurnia, Lc., M.Ag. (11 Hari)',
       category: 'Umroh Spesial Ustadz',
-      tags: ['Start Pangkal Pinang', 'Ust. Muhammad Kurnia', 'Tokoh Agama', 'Syawal 2027', 'Hotel 0 KM', 'Free Thaif', '10 Hari', 'Garuda / Saudia'],
-      programSummary: 'Umrah Hebat, Hotel Dekat, Badan Sehat, Ibadah Kuat bersama Tokoh Agama Ust. Dr. H. Muhammad Kurnia, Lc., M.Ag. Keberangkatan Start Pangkal Pinang 16 – 27 Maret 2027 (Syawal setelah Idul Fitri). Maskapai Garuda Indonesia (GA136) & Saudia Airlines (SV821/SV818). Hotel Makkah Olayan Ajyad (0 Meter ± 1 Menit Jalan Kaki ke Masjidil Haram) & Hotel Madinah Daar El Naeem. Free City Tour Thaif & Pabrik Parfum Mawar. Kuota Only 35 Seat. DP Mulai 5 Juta Saja.',
+      tags: ['Start Pangkal Pinang', 'Ust. Muhammad Kurnia', 'Tokoh Agama', 'Syawal 2027', 'Hotel 0 KM', 'Free Thaif', '11 Hari', 'Garuda / Saudia'],
+      programSummary: 'Umrah Hebat, Hotel Dekat, Badan Sehat, Ibadah Kuat bersama Tokoh Agama Ust. Dr. H. Muhammad Kurnia, Lc., M.Ag. Keberangkatan Start Pangkal Pinang 16 – 27 Maret 2027 (Syawal setelah Idul Fitri). Maskapai Garuda Indonesia (GA136) & Saudia Airlines (SV821/SV818). Hotel Makkah Olayan Ajyad (0 Meter ± 1 Menit Jalan Kaki ke Masjidil Haram) & Hotel Madinah Daar El Naeem. Free City Tour Thaif & Pabrik Parfum Mawar, City Tour Jeddah & Corniche. Kuota Only 35 Seat. DP Mulai 5 Juta Saja.',
       flyerUrl: 'images/poster-ust-muhammad-kurnia.png',
       thumbnailUrl: 'images/poster-ust-muhammad-kurnia.png',
       activeStatus: 'Aktif',
