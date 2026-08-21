@@ -198,7 +198,7 @@ function elMassaApp() {
     // LocalStorage & Data Layer
     loadStorageData() {
       try {
-        const stored = localStorage.getItem('EL_MASSA_APP_DATA_V33');
+        const stored = localStorage.getItem('EL_MASSA_APP_DATA_V34');
         if (stored) {
           const parsed = JSON.parse(stored);
           this.settings = parsed.settings || DEFAULT_ELMASSA_DATA.settings;
@@ -231,7 +231,7 @@ function elMassaApp() {
         defaultInclude: this.defaultInclude,
         defaultExclude: this.defaultExclude
       };
-      localStorage.setItem('EL_MASSA_APP_DATA_V33', JSON.stringify(dataToSave));
+      localStorage.setItem('EL_MASSA_APP_DATA_V34', JSON.stringify(dataToSave));
       this.rebuildScheduleFlatList();
     },
 

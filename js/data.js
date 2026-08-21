@@ -1212,6 +1212,97 @@ const DEFAULT_ELMASSA_DATA = {
           flightType: 'Start Pangkal Pinang ➔ Qatar / Etihad Airways'
         }
       ]
+    },
+
+    // -------------------------------------------------------------------------
+    // 11. Umrah Lebih Nyaman Syawal (9 Hari)
+    // -------------------------------------------------------------------------
+    {
+      id: 'pkg-11',
+      title: 'Umrah Lebih Nyaman Syawal (9 Hari)',
+      category: 'Umroh Syawal',
+      tags: ['Start Pangkal Pinang', 'Syawal 1448 H', '9 Hari', 'Garuda / Saudia', 'Grand Al Massa', 'Free Thaif'],
+      programSummary: 'Merayakan hari kemenangan dengan ibadah umroh lebih nyaman di Tanah Suci suasana Syawal 1448 H. Keberangkatan Start Pangkal Pinang Maret 2027 Program 9 Hari. Maskapai Garuda Indonesia / Saudia Airlines. Hotel Makkah Grand Al Massa & Hotel Madinah Daar El Naeem. Free City Tour Thaif & Pabrik Parfum Mawar. Kuota Only 35 Seat. DP Mulai 5 Juta Saja.',
+      flyerUrl: 'images/poster-umrah-nyaman-syawal.png',
+      thumbnailUrl: 'images/poster-umrah-nyaman-syawal.png',
+      activeStatus: 'Aktif',
+      createdAt: '2026-08-11T08:00:00.000Z',
+      hotelMakkah: 'Grand Al Massa / Setaraf',
+      hotelMadinah: 'Daar El Naeem / Setaraf',
+      hotelExtra: 'Free City Tour Thaif & Pabrik Parfum Mawar',
+      itinerary: [
+        { day: 1, title: 'Hari 1: Keberangkatan Pangkal Pinang ➔ Jakarta ➔ Madinah', route: 'Pangkal Pinang ➔ Jakarta ➔ Madinah', activities: ['Penerbangan dari Bandara Depati Amir Pangkal Pinang menuju Jakarta, dilanjutkan Garuda / Saudia menuju Madinah. Check-in hotel Daar El Naeem.'] },
+        { day: 2, title: 'Hari 2: Ziarah Raudhah & Masjid Nabawi', route: 'Madinah Al-Munawwarah', activities: ['Sholat di Masjid Nabawi & Ziarah Raudhah Syarifah dengan tasreh resmi.'] },
+        { day: 3, title: 'Hari 3: Ziarah Sejarah Islam Madinah', route: 'Madinah Al-Munawwarah', activities: ['Ziarah Masjid Quba, Jabal Uhud & Makam Syuhada, dan Kebun Kurma Madinah.'] },
+        { day: 4, title: 'Hari 4: Miqat Bir Ali ➔ Menuju Makkah & Pelaksanaan Umrah 1', route: 'Madinah ➔ Makkah', activities: ['Miqat di Bir Ali, menuju Makkah, check-in Grand Al Massa, pelaksanaan Umrah 1 suasana Syawal.'] },
+        { day: 5, title: 'Hari 5: Ibadah Khusyuk di Masjidil Haram', route: 'Makkah Al-Mukarramah', activities: ['Thawaf sunnah dan memperbanyak amal ibadah di depan Ka\'bah.'] },
+        { day: 6, title: 'Hari 6: Ziarah Makkah & Miqat Umrah 2', route: 'Ziarah Makkah', activities: ['Ziarah Arafah, Muzdalifah, Mina, Jabal Rahmah, dan Miqat di Ji\'ranah untuk Umrah ke-2.'] },
+        { day: 7, title: 'Hari 7: Free City Tour Thaif & Pabrik Parfum', route: 'Makkah ➔ Thaif', activities: ['Wisata alam pegunungan Thaif, Teleferik, ziarah Masjid Ibnu Abbas, dan kunjungan pabrik parfum mawar.'] },
+        { day: 8, title: 'Hari 8: Thawaf Wada\' & Transfer Menuju Bandara Jeddah', route: 'Makkah ➔ Jeddah', activities: ['Thawaf Wada\' di Masjidil Haram dan transfer menuju Bandara Internasional Jeddah.'] },
+        { day: 9, title: 'Hari 9: Tiba Kembali di Pangkal Pinang', route: 'Jeddah ➔ Jakarta ➔ Pangkal Pinang', activities: ['Tiba di Pangkal Pinang dengan keselamatan dan keberkahan umrah Syawal.'] }
+      ],
+      schedules: [
+        {
+          id: 'sch-11b',
+          startCity: 'Pangkal Pinang',
+          airline: 'Garuda / Saudia',
+          departureDate: '2027-03-20',
+          returnDate: '2027-03-28',
+          duration: 9,
+          price: 31700000,
+          dp: 5000000,
+          availableSeats: 35,
+          roomType: 'Quad Room (Grand Al Massa)',
+          flightType: 'Start Pangkal Pinang ➔ Garuda / Saudia Direct'
+        }
+      ]
+    },
+
+    // -------------------------------------------------------------------------
+    // 12. Umrah Lebih Nyaman Syawal (12 Hari)
+    // -------------------------------------------------------------------------
+    {
+      id: 'pkg-12',
+      title: 'Umrah Lebih Nyaman Syawal (12 Hari)',
+      category: 'Umroh Syawal',
+      tags: ['Start Pangkal Pinang', 'Syawal 1448 H', '12 Hari', 'Garuda / Saudia', 'Grand Al Massa', 'Free Thaif'],
+      programSummary: 'Merayakan hari kemenangan dengan ibadah umroh lebih nyaman di Tanah Suci suasana Syawal 1448 H program long stay 12 hari. Keberangkatan Start Pangkal Pinang Maret 2027 Program 12 Hari. Maskapai Garuda Indonesia / Saudia Airlines. Hotel Makkah Grand Al Massa & Hotel Madinah Daar El Naeem. Free City Tour Thaif & Pabrik Parfum Mawar. Kuota Only 35 Seat. DP Mulai 5 Juta Saja.',
+      flyerUrl: 'images/poster-umrah-nyaman-syawal.png',
+      thumbnailUrl: 'images/poster-umrah-nyaman-syawal.png',
+      activeStatus: 'Aktif',
+      createdAt: '2026-08-11T08:00:00.000Z',
+      hotelMakkah: 'Grand Al Massa / Setaraf',
+      hotelMadinah: 'Daar El Naeem / Setaraf',
+      hotelExtra: 'Free City Tour Thaif & Pabrik Parfum Mawar, Program Long Stay 12 Hari',
+      itinerary: [
+        { day: 1, title: 'Hari 1: Keberangkatan Pangkal Pinang ➔ Jakarta ➔ Madinah', route: 'Pangkal Pinang ➔ Jakarta ➔ Madinah', activities: ['Penerbangan dari Bandara Depati Amir Pangkal Pinang menuju Jakarta, dilanjutkan Garuda / Saudia menuju Madinah. Check-in hotel Daar El Naeem.'] },
+        { day: 2, title: 'Hari 2: Ziarah Raudhah & Masjid Nabawi', route: 'Madinah Al-Munawwarah', activities: ['Sholat di Masjid Nabawi & Ziarah Raudhah Syarifah dengan tasreh resmi.'] },
+        { day: 3, title: 'Hari 3: Ziarah Sejarah Islam Madinah', route: 'Madinah Al-Munawwarah', activities: ['Ziarah Masjid Quba, Jabal Uhud, dan Perkebunan Kurma Madinah.'] },
+        { day: 4, title: 'Hari 4: Ibadah Tenang & Sholat Berjamaah di Masjid Nabawi', route: 'Madinah Al-Munawwarah', activities: ['Memperbanyak shalawat, tadarus Al-Qur\'an, dan sholat di Masjid Nabawi.'] },
+        { day: 5, title: 'Hari 5: Miqat Bir Ali ➔ Menuju Makkah & Pelaksanaan Umrah 1', route: 'Madinah ➔ Makkah', activities: ['Miqat di Bir Ali, perjalanan ke Makkah, check-in Grand Al Massa, pelaksanaan Umrah 1.'] },
+        { day: 6, title: 'Hari 6: Ibadah Khusyuk di Masjidil Haram', route: 'Makkah Al-Mukarramah', activities: ['Thawaf sunnah dan sholat berjamaah di depan Ka\'bah.'] },
+        { day: 7, title: 'Hari 7: Ziarah Makkah & Miqat Umrah 2', route: 'Ziarah Makkah', activities: ['Ziarah Arafah, Muzdalifah, Mina, dan Miqat di Ji\'ranah untuk Umrah ke-2.'] },
+        { day: 8, title: 'Hari 8: Free City Tour Thaif & Pabrik Parfum', route: 'Makkah ➔ Thaif', activities: ['Wisata alam pegunungan sejuk Thaif, Teleferik, ziarah Masjid Ibnu Abbas, pabrik parfum, makan Mandhi.'] },
+        { day: 9, title: 'Hari 9: Ibadah Mandiri di Masjidil Haram', route: 'Makkah Al-Mukarramah', activities: ['Qiyamul lail dan memperbanyak doa di Multazam & Hijir Ismail.'] },
+        { day: 10, title: 'Hari 10: Ziarah Hudaibiyah & Miqat Umrah 3', route: 'Ziarah Hudaibiyah', activities: ['Mengunjungi Museum Al-Haramain dan Miqat Hudaibiyah bagi yang ingin Umrah ke-3.'] },
+        { day: 11, title: 'Hari 11: Thawaf Wada\' & Transfer Menuju Bandara Jeddah', route: 'Makkah ➔ Jeddah', activities: ['Thawaf Wada\' di Masjidil Haram dan transfer menuju Bandara Internasional Jeddah.'] },
+        { day: 12, title: 'Hari 12: Tiba Kembali di Pangkal Pinang', route: 'Jeddah ➔ Jakarta ➔ Pangkal Pinang', activities: ['Tiba kembali di Pangkal Pinang dengan keselamatan dan predikat umrah mabrur.'] }
+      ],
+      schedules: [
+        {
+          id: 'sch-12b',
+          startCity: 'Pangkal Pinang',
+          airline: 'Garuda / Saudia',
+          departureDate: '2027-03-16',
+          returnDate: '2027-03-27',
+          duration: 12,
+          price: 34700000,
+          dp: 5000000,
+          availableSeats: 35,
+          roomType: 'Quad Room (Grand Al Massa)',
+          flightType: 'Start Pangkal Pinang ➔ Garuda / Saudia Direct'
+        }
+      ]
     }
   ]
 };
