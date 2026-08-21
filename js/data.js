@@ -451,14 +451,14 @@ const DEFAULT_ELMASSA_DATA = {
     },
 
     // -------------------------------------------------------------------------
-    // 4. Umrah Nisfu Sya'ban di Mekkah (10 Hari)
+    // 4. Umrah Nisfu Sya'ban di Mekkah (11 Hari)
     // -------------------------------------------------------------------------
     {
       id: 'pkg-04',
-      title: 'Umrah Nisfu Sya\'ban di Mekkah (10 Hari)',
+      title: 'Umrah Nisfu Sya\'ban di Mekkah (11 Hari)',
       category: 'Umroh Sya\'ban',
-      tags: ['Start Pangkal Pinang', 'Malam Nisfu Sya\'ban', 'Free Thaif', '10 Hari', 'Garuda / Saudia', 'Grand Al Massa'],
-      programSummary: 'Meraih keutamaan malam Nisfu Sya\'ban langsung di depan Ka\'bah Masjidil Haram. Keberangkatan Start Pangkal Pinang 20 – 30 Januari 2027 Program 10 Hari. Maskapai Garuda Indonesia / Saudia Airlines. Hotel Makkah Grand Al Massa & Hotel Madinah Daar El Naeem. Free City Tour Thaif & Pabrik Parfum. Kuota Only 25 Seat. DP Mulai 5 Juta Saja.',
+      tags: ['Start Pangkal Pinang', 'Malam Nisfu Sya\'ban', 'Free Thaif', '11 Hari', 'Garuda Indonesia', 'Grand Al Massa'],
+      programSummary: 'Meraih keutamaan malam Nisfu Sya\'ban langsung di depan Ka\'bah Masjidil Haram. Keberangkatan Start Pangkal Pinang 20 – 30 Januari 2027 Program 11 Hari. Maskapai Garuda Indonesia (Direct JED & PGK) & G983. Hotel Makkah Grand Al Massa & Hotel Madinah Daar El Naeem. Free City Tour Thaif & Pabrik Parfum. Kuota Only 25 Seat. DP Mulai 5 Juta Saja.',
       flyerUrl: 'images/poster-nisfu-syaban.png',
       thumbnailUrl: 'images/poster-nisfu-syaban.png',
       activeStatus: 'Aktif',
@@ -467,30 +467,145 @@ const DEFAULT_ELMASSA_DATA = {
       hotelMadinah: 'Daar El Naeem / Setaraf',
       hotelExtra: 'Free City Tour Thaif & Pabrik Parfum Mawar, Qiyamul Lail Nisfu Sya\'ban',
       itinerary: [
-        { day: 1, title: 'Hari 1: Keberangkatan Pangkal Pinang ➔ Jakarta ➔ Madinah', route: 'Pangkal Pinang ➔ Jakarta ➔ Madinah', activities: ['Penerbangan dari Bandara Depati Amir Pangkal Pinang menuju Jakarta, dilanjutkan Garuda / Saudia menuju Madinah. Check-in hotel Daar El Naeem.'] },
-        { day: 2, title: 'Hari 2: Ziarah Raudhah & Masjid Nabawi', route: 'Madinah Al-Munawwarah', activities: ['Sholat di Masjid Nabawi & Ziarah Raudhah Syarifah dengan tasreh resmi Nusuk.'] },
-        { day: 3, title: 'Hari 3: Ziarah Sejarah Kota Madinah', route: 'Madinah Al-Munawwarah', activities: ['Ziarah Masjid Quba, Jabal Uhud, dan Kebun Kurma Madinah.'] },
-        { day: 4, title: 'Hari 4: Miqat Bir Ali ➔ Menuju Makkah & Umrah 1', route: 'Madinah ➔ Makkah', activities: ['Ambil Miqat di Bir Ali, perjalanan darat ke Makkah, check-in Grand Al Massa, pelaksanaan Umrah 1.'] },
-        { day: 5, title: 'Hari 5: Ibadah Malam Nisfu Sya\'ban di Masjidil Haram', route: 'Makkah Al-Mukarramah', activities: ['Qiyamul lail, zikir, dan doa bersama menyambut malam Nisfu Sya\'ban di pelataran Ka\'bah.'] },
-        { day: 6, title: 'Hari 6: Ziarah Makkah & Miqat Umrah 2', route: 'Ziarah Makkah', activities: ['Ziarah Arafah, Muzdalifah, Mina, Jabal Rahmah, dan Miqat di Ji\'ranah untuk Umrah ke-2.'] },
-        { day: 7, title: 'Hari 7: Free City Tour Thaif & Pabrik Parfum', route: 'Makkah ➔ Thaif', activities: ['Wisata alam pegunungan Thaif, Teleferik, ziarah Masjid Ibnu Abbas, dan kunjungan pabrik parfum mawar.'] },
-        { day: 8, title: 'Hari 8: Ibadah Mandiri & Thawaf Sunnah', route: 'Makkah Al-Mukarramah', activities: ['Memperbanyak thawaf sunnah, iktikaf, dan berdoa di depan Multazam & Hijir Ismail.'] },
-        { day: 9, title: 'Hari 9: Thawaf Wada\' & Menuju Bandara Jeddah', route: 'Makkah ➔ Jeddah', activities: ['Thawaf Wada\' di Masjidil Haram dan transfer menuju Bandara Internasional Jeddah.'] },
-        { day: 10, title: 'Hari 10: Tiba Kembali di Pangkal Pinang', route: 'Jeddah ➔ Jakarta ➔ Pangkal Pinang', activities: ['Tiba di Pangkal Pinang dengan keselamatan dan keberkahan ibadah umrah.'] }
+        {
+          day: 1,
+          title: 'Hari 1 (20 Jan 2027): Pangkal Pinang ➔ Jakarta & Transit Hotel Jakarta',
+          route: 'Pangkal Pinang ➔ Jakarta',
+          activities: [
+            'Pukul 09.00 WIB: Jemaah berkumpul di Bandar Udara Internasional Depati Amir Pangkal Pinang untuk persiapan take-off ke Jakarta.',
+            'Pukul 12.25 WIB: Jemaah take-off dari Pangkal Pinang menggunakan pesawat Garuda Indonesia dan tiba di Bandara Soekarno-Hatta Jakarta pukul 13.54 WIB.',
+            'Menuju hotel transit di Jakarta, istirahat dan menginap 1 malam di hotel transit (info hotel diinfokan kemudian).',
+            'Pukul 19.30 WIB – Selesai: Pemantapan manasik umrah di mushalla/meeting room hotel transit bersama tim El Massa.'
+          ]
+        },
+        {
+          day: 2,
+          title: 'Hari 2 (21 Jan 2027): Jakarta ➔ Jeddah Direct (Garuda Indonesia) ➔ Madinah',
+          route: 'Jakarta ➔ Jeddah ➔ Madinah',
+          activities: [
+            'Pukul 05.30 WIB: Berkumpul di lobby hotel untuk persiapan menuju bandara.',
+            'Pukul 11.25 WIB: Penerbangan menuju Jeddah menggunakan pesawat Garuda Indonesia.',
+            'Pukul 17.30 LT: Tiba di Bandara Internasional King Abdulaziz Jeddah, dilanjutkan perjalanan menggunakan bus eksekutif menuju Kota Madinah.',
+            'Check-in hotel Madinah (Daar El Naeem) dan beristirahat.'
+          ]
+        },
+        {
+          day: 3,
+          title: 'Hari 3 (22 Jan 2027): Ziarah Raudhah Syarifah, Pengenalan Nabawi & Sholat Jumat',
+          route: 'Madinah Al-Munawwarah',
+          activities: [
+            'Jadwal memasuki Raudhah Syarifah (Insya Allah apabila Tasreh keluar sesuai jadwal resmi):',
+            '• Selesai Sholat Subuh – 11.00 Pagi: Jamaah Perempuan',
+            '• 11.00 Pagi – Selesai Sholat Isya: Jamaah Laki-laki',
+            '• Selesai Isya – 23.30 Malam: Jamaah Perempuan',
+            '• 23.30 Malam – Sholat Subuh: Jamaah Laki-laki',
+            'Ziarah dan pengenalan sekitar Masjid Nabawi: Saqifah Bani Sa\'idah (Bani Tsaqifah), Makam Rasulullah ﷺ dan Makam Sahabat (dari sisi luar masjid), Masjid Ali, Masjid Ghamamah, dan Pemakaman Baqi\'.',
+            'Bersiap melaksanakan ibadah Sholat Jumat berjamaah di Masjid Nabawi, selesai sholat Jumat dilanjutkan acara bebas.'
+          ]
+        },
+        {
+          day: 4,
+          title: 'Hari 4 (23 Jan 2027): Ziarah Jejak Sejarah Kota Madinah & Manasik Singkat',
+          route: 'Madinah Al-Munawwarah',
+          activities: [
+            'Melaksanakan Tour dan Ziarah jejak sejarah Islam di sekitar Kota Madinah:',
+            '• Masjid Quba (Masjid pertama yang dibangun oleh Rasulullah ﷺ).',
+            '• Jabal Uhud & Makam Syuhada Uhud (napak tilas perjuangan Perang Uhud).',
+            '• Perkebunan Kurma Madinah (kondisional).',
+            '• Melewati Masjid Qiblatain dan Masjid Khandaq sepanjang rute perjalanan.',
+            'Setelahnya acara bebas, jemaah memperbanyak ibadah di Masjid Nabawi (I\'tikaf, Tadarus Al-Qur\'an, dll).',
+            'Sore / malam hari: Pemantapan manasik singkat sebelum keberangkatan dan pelaksanaan ibadah Umroh ke Makkah.'
+          ]
+        },
+        {
+          day: 5,
+          title: 'Hari 5 (24 Jan 2027): Madinah ➔ Miqat Bir Ali ➔ Makkah & Pelaksanaan Umrah 1',
+          route: 'Madinah ➔ Bir Ali ➔ Makkah',
+          activities: [
+            'Koper diletakkan di depan pintu kamar masing-masing untuk check-out dari hotel Madinah dan bersiap menuju Makkah.',
+            'Pukul 14.00 LT siang: Bus berangkat menuju Masjid Bir Ali (Dzulhulaifah) untuk mengambil Miqat dan melafazkan niat Umrah dibimbing oleh Muthawwif.',
+            'Jamaah laki-laki mengenakan pakaian ihram dan mematuhi seluruh larangan ihram.',
+            'Selama perjalanan darat menuju Kota Makkah, jemaah memperbanyak melantunkan Talbiyah.',
+            'Setibanya di Makkah langsung menuju hotel Grand Al Massa untuk meletakkan barang/koper.',
+            'Jika kamar belum ready, jemaah langsung melaksanakan prosesi Ibadah Umrah Pertama (Thawaf, Sa\'i, dan Tahallul) dibimbing oleh Muthawwif.'
+          ]
+        },
+        {
+          day: 6,
+          title: 'Hari 6 (25 Jan 2027): Ibadah Khusyuk & Sholat Jumat di Masjidil Haram',
+          route: 'Makkah Al-Mukarramah',
+          activities: [
+            'Acara bebas, jemaah memperbanyak ibadah di Masjidil Haram (I\'tikaf, Thawaf sunnah, tilawah Al-Qur\'an).',
+            'Siang harinya seluruh jemaah melaksanakan ibadah Sholat Jumat berjamaah di Masjidil Haram.'
+          ]
+        },
+        {
+          day: 7,
+          title: 'Hari 7 (26 Jan 2027): Ziarah Jejak Sejarah Makkah & Miqat Umrah 2 (Ji\'ranah)',
+          route: 'Ziarah Makkah ➔ Ji\'ranah',
+          activities: [
+            'Melaksanakan Tour dan Ziarah jejak sejarah Islam di sekitar Kota Makkah: Jabal Tsur, Padang Arafah, Jabal Rahmah, Muzdalifah, Mina, dan melewati Jabal Nur (kondisional).',
+            'Singgah di Masjid Ji\'ranah untuk mengambil Miqat bagi jamaah yang ingin melaksanakan Umrah Kedua (opsional / sunnah) dengan mengenakan pakaian ihram.',
+            'Kembali ke Masjidil Haram untuk pelaksanaan Thawaf, Sa\'i, dan Tahallul Umrah ke-2.'
+          ]
+        },
+        {
+          day: 8,
+          title: 'Hari 8 (27 Jan 2027): Free Bonus City Tour Kota Bersejarah Thaif & Pabrik Parfum',
+          route: 'Makkah ➔ Thaif ➔ Makkah',
+          activities: [
+            'Setelah sarapan, semua jamaah bersiap menuju Kota Pegunungan Sejuk Thaif untuk menikmati Bonus City Tour Thaif Gratis dari El Massa (wahana berbayar masing-masing).',
+            'Mengunjungi Masjid Abdullah bin Abbas, Pabrik Penyulingan Minyak Wangi Mawar Thaif, pemandangan alam Teleferik, dan santap siang khas Nasi Mandhi Thaif.',
+            'Perjalanan pulang melewati tempat Miqat Qarnul Manazil bagi jamaah yang ingin mengambil niat Umrah Ketiga.'
+          ]
+        },
+        {
+          day: 9,
+          title: 'Hari 9 (28 Jan 2027): Thawaf Wada\', Check-out Hotel & Penerbangan Jeddah ➔ Jakarta (G983)',
+          route: 'Makkah ➔ Jeddah ➔ Jakarta',
+          activities: [
+            'Setelah sarapan: Semua koper diletakkan di depan pintu kamar masing-masing.',
+            'Berangkat menuju Masjidil Haram untuk melaksanakan Thawaf Wada\' (pamitan dengan Ka\'bah).',
+            'Pukul 14.00 LT: Check-out dari hotel setelah makan siang, dilanjutkan perjalanan menuju Bandara Internasional King Abdulaziz Jeddah.',
+            'Pukul 21.55 LT: Pesawat penerbangan ke Jakarta (G983) take-off dari Bandara Jeddah (tiba esok hari pukul 11.50 WIB).'
+          ]
+        },
+        {
+          day: 10,
+          title: 'Hari 10 (29 Jan 2027): Tiba di Jakarta & Istirahat di Hotel Transit',
+          route: 'Jeddah ➔ Jakarta',
+          activities: [
+            'Pukul 11.50 WIB: Jamaah mendarat di Bandara Soekarno-Hatta Jakarta.',
+            'Proses imigrasi, pengambilan bagasi, dan menuju hotel transit yang disediakan El Massa.',
+            'Istirahat di hotel transit Jakarta sambil menunggu penerbangan menuju Pangkal Pinang keesokan harinya.'
+          ]
+        },
+        {
+          day: 11,
+          title: 'Hari 11 (30 Jan 2027): Penerbangan Jakarta ➔ Pangkal Pinang (Garuda Indonesia)',
+          route: 'Jakarta ➔ Pangkal Pinang',
+          activities: [
+            'Pukul 05.30 WIB: Jamaah berkumpul di lobby hotel transit untuk bersiap menuju bandara.',
+            'Pukul 10.20 WIB: Penerbangan menuju Pangkal Pinang menggunakan maskapai Garuda Indonesia.',
+            'Pukul 11.40 WIB: Tiba dengan selamat di Bandar Udara Depati Amir Pangkal Pinang.',
+            'Pembagian bagasi, air zamzam 5 liter, dan bingkisan kenang-kenangan eksklusif dari El Massa.',
+            'Berakhirlah seluruh rangkaian perjalanan ibadah penuh berkah ini bersama El Massa Tour & Travel.'
+          ]
+        }
       ],
       schedules: [
         {
           id: 'sch-04b',
           startCity: 'Pangkal Pinang',
-          airline: 'Garuda / Saudia',
+          airline: 'Garuda Indonesia',
           departureDate: '2027-01-20',
           returnDate: '2027-01-30',
-          duration: 10,
+          duration: 11,
           price: 34700000,
           dp: 5000000,
           availableSeats: 25,
           roomType: 'Quad Room (Grand Al Massa)',
-          flightType: 'Start Pangkal Pinang ➔ Garuda / Saudia Direct'
+          flightType: 'Garuda Indonesia Direct JED & Connecting PGK'
         }
       ]
     },
