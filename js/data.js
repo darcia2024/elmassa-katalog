@@ -301,14 +301,14 @@ const DEFAULT_ELMASSA_DATA = {
     },
 
     // -------------------------------------------------------------------------
-    // 3. Umrah Nyaman Akhir Tahun
+    // 3. Umrah Nyaman Akhir Tahun (11 Hari)
     // -------------------------------------------------------------------------
     {
       id: 'pkg-03',
-      title: 'Umrah Nyaman Akhir Tahun (9 Hari)',
+      title: 'Umrah Nyaman Akhir Tahun (11 Hari)',
       category: 'Umroh Akhir Tahun',
-      tags: ['Akhir Tahun', 'Start Pangkal Pinang', 'Saudia Airlines', 'Free Thaif', '9 Hari', 'Quad Room'],
-      programSummary: 'Menutup tahun 2026 dengan beribadah di Baitullah bersama program Umrah Nyaman Akhir Tahun (14 – 22 Desember 2026). Keberangkatan Start Pangkal Pinang bersama Saudia Airlines direct. Hotel Sawaed Al Khaer Makkah & Daar El Naeem Madinah. Free City Tour Thaif & Pabrik Parfum. Hanya 25 Seat.',
+      tags: ['Akhir Tahun', 'Start Pangkal Pinang', 'Saudia Airlines', 'Free Thaif', '11 Hari', 'Quad Room'],
+      programSummary: 'Menutup tahun 2026 dengan beribadah di Baitullah bersama program Umrah Nyaman Akhir Tahun (13 – 23 Desember 2026). Keberangkatan Start Pangkal Pinang bersama Saudia Airlines (SV821/SV826). Hotel Sawaed Al Khaer Makkah & Daar El Naeem Madinah. Free City Tour Thaif & Pabrik Parfum. Hanya 25 Seat. DP Mulai 5 Juta Saja.',
       flyerUrl: 'images/poster-desember-akhir-tahun.jpg',
       thumbnailUrl: 'images/poster-desember-akhir-tahun.jpg',
       activeStatus: 'Aktif',
@@ -317,29 +317,135 @@ const DEFAULT_ELMASSA_DATA = {
       hotelMadinah: 'Daar El Naeem / Setaraf',
       hotelExtra: 'Free City Tour Thaif & Pabrik Parfum Mawar',
       itinerary: [
-        { day: 1, title: 'Hari 1 (14 Des 2026): Keberangkatan Start Pangkal Pinang – Madinah', route: 'Pangkal Pinang ➔ Jakarta ➔ Madinah (Saudia)', activities: ['Jamaah berkumpul di Bandara Depati Amir Pangkal Pinang persiapan penerbangan ke Jakarta.', 'Handling tim El Massa di Bandara Soekarno-Hatta Lounge Terminal 3.', 'Penerbangan Saudia Airlines direct menuju Madinah, check-in hotel Daar El Naeem Madinah.'] },
-        { day: 2, title: 'Hari 2 (15 Des 2026): Ziarah Raudhah & Masjid Nabawi', route: 'Madinah Al-Munawwarah', activities: ['Sholat fardhu di Masjid Nabawi & Ziarah Raudhah Syarifah dengan tasreh resmi Nusuk.'] },
-        { day: 3, title: 'Hari 3 (16 Des 2026): Ziarah Sejarah Kota Madinah', route: 'Madinah Al-Munawwarah', activities: ['Kunjungan ziarah Masjid Quba, Jabal Uhud, dan Perkebunan Kurma.'] },
-        { day: 4, title: 'Hari 4 (17 Des 2026): Miqat Bir Ali & Pelaksanaan Umrah 1', route: 'Madinah ➔ Makkah', activities: ['Ambil Miqat di Bir Ali, perjalanan darat ke Makkah Al-Mukarramah, check-in Sawaed Al Khaer, pelaksanaan Ibadah Umrah 1.'] },
-        { day: 5, title: 'Hari 5 (18 Des 2026): Ibadah & Sholat Jumat di Masjidil Haram', route: 'Makkah Al-Mukarramah', activities: ['Memperbanyak ibadah, thawaf sunnah, dan Sholat Jumat berjamaah di Masjidil Haram.'] },
-        { day: 6, title: 'Hari 6 (19 Des 2026): Ziarah Makkah & Miqat Umrah 2', route: 'Ziarah Makkah', activities: ['Ziarah Arafah, Muzdalifah, Mina, Jabal Rahmah. Miqat di Ji\'ranah untuk Umrah ke-2.'] },
-        { day: 7, title: 'Hari 7 (20 Des 2026): Free City Tour Thaif & Pabrik Parfum', route: 'Makkah ➔ Thaif', activities: ['Wisata alam & sejarah ke Kota Sejuk Thaif, kunjungan Pabrik Minyak Wangi Mawar, ziarah Masjid Ibnu Abbas, makan siang Mandhi.'] },
-        { day: 8, title: 'Hari 8 (21 Des 2026): Thawaf Wada\' & Menuju Bandara Jeddah', route: 'Makkah ➔ Jeddah', activities: ['Thawaf Wada\' di Masjidil Haram, check-out dan transfer menuju Bandara Internasional Jeddah.'] },
-        { day: 9, title: 'Hari 9 (22 Des 2026): Tiba di Jakarta & Lanjut ke Pangkal Pinang', route: 'Jeddah ➔ Jakarta ➔ Pangkal Pinang', activities: ['Tiba di Bandara Soekarno-Hatta Jakarta dan melanjutkan penerbangan ke Pangkal Pinang.'] }
+        {
+          day: 1,
+          title: 'Hari 1 (13 Des 2026): Pangkal Pinang ➔ Jakarta & Transit Dprima Hotel',
+          route: 'Pangkal Pinang ➔ Jakarta',
+          activities: [
+            'Pukul 09.00 WIB: Jemaah berkumpul di Bandar Udara Internasional Depati Amir Pangkal Pinang untuk persiapan take-off ke Jakarta.',
+            'Pukul 12.25 WIB: Jemaah take-off dari Pangkal Pinang dan tiba di Bandara Soekarno-Hatta Jakarta pukul 13.54 WIB.',
+            'Menuju hotel transit di Jakarta (Dprima Hotel), istirahat dan menginap 1 malam di hotel transit.',
+            'Pukul 19.30 WIB – Selesai: Pemantapan manasik umrah di mushalla/meeting room hotel transit bersama tim El Massa.'
+          ]
+        },
+        {
+          day: 2,
+          title: 'Hari 2 (14 Des 2026): Jakarta ➔ Jeddah Direct (Saudia SV821) ➔ Madinah',
+          route: 'Jakarta ➔ Jeddah ➔ Madinah',
+          activities: [
+            'Pukul 05.00 WIB: Sarapan pagi dan berkumpul di lobby hotel untuk persiapan menuju bandara.',
+            'Pukul 09.00 WIB: Penerbangan menuju Jeddah menggunakan pesawat Saudia Airlines (SV821).',
+            'Pukul 14.40 LT: Tiba di Bandara Internasional King Abdulaziz Jeddah, dilanjutkan perjalanan menggunakan bus eksekutif menuju Kota Madinah.',
+            'Tiba di Madinah, check-in hotel (Daar El Naeem) dan beristirahat.'
+          ]
+        },
+        {
+          day: 3,
+          title: 'Hari 3 (15 Des 2026): Ziarah Raudhah Syarifah, Pengenalan Nabawi & Sholat Jumat',
+          route: 'Madinah Al-Munawwarah',
+          activities: [
+            'Jadwal memasuki Raudhah Syarifah (Insya Allah apabila Tasreh keluar sesuai jadwal resmi):',
+            '• Selesai Sholat Subuh – 11.00 Pagi: Jamaah Perempuan',
+            '• 11.00 Pagi – Selesai Sholat Isya: Jamaah Laki-laki',
+            '• Selesai Isya – 23.30 Malam: Jamaah Perempuan',
+            '• 23.30 Malam – Sholat Subuh: Jamaah Laki-laki',
+            'Ziarah dan pengenalan sekitar Masjid Nabawi: Saqifah Bani Sa\'idah (Bani Tsaqifah), Makam Rasulullah ﷺ dan Makam Sahabat (dari sisi luar masjid), Masjid Ali, Masjid Ghamamah, dan Pemakaman Baqi\'.',
+            'Bersiap melaksanakan ibadah Sholat Jumat berjamaah di Masjid Nabawi, selesai sholat Jumat dilanjutkan acara bebas.'
+          ]
+        },
+        {
+          day: 4,
+          title: 'Hari 4 (16 Des 2026): Ziarah Jejak Sejarah Islam Kota Madinah',
+          route: 'Madinah Al-Munawwarah',
+          activities: [
+            'Melaksanakan Tour dan Ziarah jejak sejarah Islam di sekitar Kota Madinah:',
+            '• Masjid Quba (Masjid pertama yang dibangun oleh Rasulullah ﷺ).',
+            '• Jabal Uhud & Makam Syuhada Uhud (napak tilas para syuhada Perang Uhud).',
+            '• Perkebunan Kurma Madinah (kondisional).',
+            '• Melewati Masjid Qiblatain dan Masjid Khandaq sepanjang rute perjalanan.',
+            'Setelahnya acara bebas, jemaah memperbanyak ibadah di Masjid Nabawi (I\'tikaf, Tadarus Al-Qur\'an, dll).'
+          ]
+        },
+        {
+          day: 5,
+          title: 'Hari 5 (17 Des 2026): Madinah ➔ Miqat Bir Ali ➔ Makkah & Pelaksanaan Umrah 1',
+          route: 'Madinah ➔ Bir Ali ➔ Makkah',
+          activities: [
+            'Koper diletakkan di depan pintu kamar masing-masing untuk check-out dari hotel Madinah dan bersiap menuju Makkah.',
+            'Pukul 14.00 LT siang: Bus berangkat menuju Masjid Bir Ali (Dzulhulaifah) untuk mengambil Miqat dan melafazkan niat Umrah dibimbing oleh Muthawwif.',
+            'Jamaah laki-laki mengenakan pakaian ihram dan mematuhi seluruh larangan ihram.',
+            'Selama perjalanan darat menuju Kota Makkah, jemaah memperbanyak melantunkan Talbiyah.',
+            'Setibanya di Makkah langsung menuju hotel untuk meletakkan barang/koper.',
+            'Jika kamar belum ready, jemaah langsung melaksanakan prosesi Ibadah Umrah Pertama (Thawaf, Sa\'i, dan Tahallul) dibimbing oleh Muthawwif.'
+          ]
+        },
+        {
+          day: 6,
+          title: 'Hari 6 (18 Des 2026): Ibadah Khusyuk & Sholat Jumat di Masjidil Haram',
+          route: 'Makkah Al-Mukarramah',
+          activities: [
+            'Acara bebas, jemaah memperbanyak ibadah di Masjidil Haram (I\'tikaf, Thawaf sunnah, tilawah Al-Qur\'an).',
+            'Siang harinya seluruh jemaah melaksanakan ibadah Sholat Jumat berjamaah di Masjidil Haram.'
+          ]
+        },
+        {
+          day: 7,
+          title: 'Hari 7 (19 Des 2026): Ziarah Jejak Sejarah Makkah & Miqat Umrah 2 (Ji\'ranah)',
+          route: 'Ziarah Makkah ➔ Ji\'ranah',
+          activities: [
+            'Melaksanakan Tour dan Ziarah jejak sejarah Islam di sekitar Kota Makkah: Jabal Tsur, Padang Arafah, Jabal Rahmah, Muzdalifah, Mina, dan melewati Jabal Nur (kondisional).',
+            'Singgah di Masjid Ji\'ranah untuk mengambil Miqat bagi jamaah yang ingin melaksanakan Umrah Kedua (opsional / sunnah) dengan mengenakan pakaian ihram.',
+            'Kembali ke Masjidil Haram untuk pelaksanaan Thawaf, Sa\'i, dan Tahallul Umrah ke-2.'
+          ]
+        },
+        {
+          day: 8,
+          title: 'Hari 8 (20 Des 2026): Free Bonus City Tour Kota Bersejarah Thaif & Pabrik Parfum',
+          route: 'Makkah ➔ Thaif ➔ Makkah',
+          activities: [
+            'Setelah sarapan, semua jamaah bersiap menuju Kota Pegunungan Sejuk Thaif untuk menikmati Bonus City Tour Thaif Gratis dari El Massa (wahana berbayar masing-masing).',
+            'Mengunjungi Masjid Abdullah bin Abbas, Pabrik Penyulingan Minyak Wangi Mawar Thaif, pemandangan alam Teleferik, dan santap siang khas Nasi Mandhi Thaif.',
+            'Perjalanan pulang melewati tempat Miqat Qarnul Manazil bagi jamaah yang ingin mengambil niat Umrah Ketiga.'
+          ]
+        },
+        {
+          day: 9,
+          title: 'Hari 9 (21-22 Des 2026): Thawaf Wada\', Transfer Jeddah, Penerbangan ke Jakarta (SV826)',
+          route: 'Makkah ➔ Jeddah ➔ Jakarta',
+          activities: [
+            'Memperbanyak ibadah di Masjidil Haram, melaksanakan Thawaf Wada\' (Thawaf Perpisahan) dan persiapan check-out ke Bandara Jeddah.',
+            'Semua jemaah meletakkan koper di depan kamar masing-masing.',
+            'Pukul 03.00 (dini hari): Check-out dari hotel Makkah dan melanjutkan perjalanan ke Bandara Internasional King Abdulaziz Jeddah.',
+            'Pukul 08.45 LT: Pesawat Saudia Airlines (SV826) take-off menuju Jakarta.',
+            'Pukul 22.30 WIB (22 Des 2026): Tiba di Bandara Soekarno-Hatta Jakarta. Check-in dan beristirahat di hotel transit Jakarta (Dprima Hotel).'
+          ]
+        },
+        {
+          day: 10,
+          title: 'Hari 10 (23 Des 2026): Penerbangan Jakarta ➔ Pangkal Pinang',
+          route: 'Jakarta ➔ Pangkal Pinang',
+          activities: [
+            'Pukul 05.30 WIB: Jamaah berkumpul di lobby hotel transit untuk bersiap menuju bandara.',
+            'Pukul 10.20 WIB: Penerbangan menuju Pangkal Pinang.',
+            'Pukul 11.40 WIB: Tiba dengan selamat di Bandar Udara Depati Amir Pangkal Pinang.',
+            'Pembagian bagasi, air zamzam 5 liter, dan bingkisan kenang-kenangan eksklusif dari El Massa.',
+            'Berakhirlah seluruh rangkaian perjalanan ibadah penuh makna ini bersama El Massa Tour & Travel.'
+          ]
+        }
       ],
       schedules: [
         {
           id: 'sch-03',
           startCity: 'Pangkal Pinang',
           airline: 'Saudia Airlines',
-          departureDate: '2026-12-14',
-          returnDate: '2026-12-22',
-          duration: 9,
+          departureDate: '2026-12-13',
+          returnDate: '2026-12-23',
+          duration: 11,
           price: 31900000,
           dp: 5000000,
           availableSeats: 25,
           roomType: 'Quad Room (Hotel Sawaed Al Khaer)',
-          flightType: 'Connecting PGK ➔ Saudia Direct Landing Madinah'
+          flightType: 'Connecting PGK ➔ Saudia SV821/SV826'
         }
       ]
     },
