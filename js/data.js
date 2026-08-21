@@ -753,34 +753,6 @@ const DEFAULT_ELMASSA_DATA = {
         }
       ]
     },
-
-    // -------------------------------------------------------------------------
-    // 8. Umrah Muharram Awal Musim (9 Hari)
-    // -------------------------------------------------------------------------
-    {
-      id: 'pkg-08',
-      title: 'Umrah Muharram Awal Musim (9 Hari)',
-      category: 'Umroh Awal Musim',
-      tags: ['Tahun Baru Islam', 'Awal Musim', 'Free Thaif', 'Start JKT & PGK', 'Saudia / Garuda'],
-      programSummary: 'Membuka tahun baru hijriyah 1449 H dengan ibadah umroh awal musim. Tersedia Start Jakarta & Start Pangkal Pinang. Suasana Tanah Suci sangat nyaman. Saudia / Garuda Indonesia, Free City Tour Thaif.',
-      flyerUrl: 'images/placeholder-package.svg',
-      thumbnailUrl: 'images/placeholder-package.svg',
-      activeStatus: 'Aktif',
-      createdAt: '2026-08-08T08:00:00.000Z',
-      hotelMakkah: 'Grand Almassa Hotel Makkah',
-      hotelMadinah: 'Daar El Naeem Hotel Madinah',
-      hotelExtra: 'Free City Tour Thaif & Cable Car',
-      itinerary: [
-        { day: 1, title: 'Hari 1: Keberangkatan (Jakarta / Pangkal Pinang) – Madinah', route: 'Jakarta / Pangkal Pinang ➔ Madinah', activities: ['Penerbangan Saudia / Garuda menuju Madinah, check-in hotel Daar El Naeem.'] },
-        { day: 2, title: 'Hari 2: Ziarah Raudhah & Masjid Nabawi', route: 'Madinah Al-Munawwarah', activities: ['Sholat di Masjid Nabawi & Ziarah Raudhah Syarifah.'] },
-        { day: 3, title: 'Hari 3: Ziarah Sejarah Madinah', route: 'Madinah Al-Munawwarah', activities: ['Ziarah Masjid Quba, Jabal Uhud, dan Kebun Kurma.'] },
-        { day: 4, title: 'Hari 4: Menuju Makkah & Pelaksanaan Umrah 1', route: 'Madinah ➔ Makkah', activities: ['Miqat di Bir Ali, menuju Makkah, check-in Grand Almassa, pelaksanaan Umrah 1.'] },
-        { day: 5, title: 'Hari 5: Ibadah di Masjidil Haram', route: 'Makkah Al-Mukarramah', activities: ['Thawaf sunnah dan memperbanyak amal ibadah di Masjidil Haram.'] },
-        { day: 6, title: 'Hari 6: Ziarah Makkah & Miqat Umrah 2', route: 'Ziarah Makkah', activities: ['Ziarah Arafah, Muzdalifah, Mina, dan Miqat di Ji\'ranah.'] },
-        { day: 7, title: 'Hari 7: Free City Tour Thaif', route: 'Makkah ➔ Thaif', activities: ['Wisata alam Thaif, Teleferik, ziarah Masjid Ibnu Abbas.'] },
-        { day: 8, title: 'Hari 8: Thawaf Wada\' & Transfer Jeddah', route: 'Makkah ➔ Jeddah', activities: ['Thawaf Wada\' di Masjidil Haram dan transfer ke Bandara.'] },
-        { day: 9, title: 'Hari 9: Tiba di Jakarta / Pangkal Pinang', route: 'Jeddah ➔ Jakarta / Pangkal Pinang', activities: ['Tiba di Indonesia dengan selamat.'] }
-      ],
     // -------------------------------------------------------------------------
     // 8. Umrah Muharram Awal Musim (9 Hari)
     // -------------------------------------------------------------------------
