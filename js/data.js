@@ -465,8 +465,8 @@ const DEFAULT_ELMASSA_DATA = {
       id: 'pkg-06',
       title: 'Umrah Sayang Orang Tua Bersama IMB (10 Hari)',
       category: 'Umroh Syawal',
-      tags: ['Sayang Orang Tua', 'Ibu Muda Berkarya', 'Mekkah 0 KM', 'Free Thaif', '10 Hari', 'Garuda / Saudia'],
-      programSummary: 'Lebih nyaman untuk orang tua tercinta bersama Komunitas Ibu Muda Berkarya (IMB). Keberangkatan Maret 2027 (Syawal) Program 10 Hari. Maskapai Garuda Indonesia / Saudia Airlines. Hotel Makkah Olayan Ajyad (0 Meter ± 1 Menit Jalan Kaki ke Masjidil Haram) & Hotel Madinah Daar El Naeem. Free City Tour Thaif & Pabrik Parfum Mawar. Kuota Only 30 Seat. DP Mulai 5 Juta Saja.',
+      tags: ['Start Pangkal Pinang', 'Sayang Orang Tua', 'Ibu Muda Berkarya', 'Mekkah 0 KM', 'Free Thaif', '10 Hari', 'Garuda / Saudia'],
+      programSummary: 'Lebih nyaman untuk orang tua tercinta bersama Komunitas Ibu Muda Berkarya (IMB). Keberangkatan Start Pangkal Pinang Maret 2027 (Syawal) Program 10 Hari. Maskapai Garuda Indonesia / Saudia Airlines. Hotel Makkah Olayan Ajyad (0 Meter ± 1 Menit Jalan Kaki ke Masjidil Haram) & Hotel Madinah Daar El Naeem. Free City Tour Thaif & Pabrik Parfum Mawar. Kuota Only 30 Seat. DP Mulai 5 Juta Saja.',
       flyerUrl: 'images/poster-umrah-sayang-orang-tua.png',
       thumbnailUrl: 'images/poster-umrah-sayang-orang-tua.png',
       activeStatus: 'Aktif',
@@ -475,7 +475,7 @@ const DEFAULT_ELMASSA_DATA = {
       hotelMadinah: 'Daar El Naeem / Setaraf',
       hotelExtra: 'Free City Tour Thaif & Pabrik Parfum Mawar, Pendampingan Khusus Ramah Orang Tua',
       itinerary: [
-        { day: 1, title: 'Hari 1: Keberangkatan (Jakarta / Pangkal Pinang) – Madinah', route: 'Jakarta / Pangkal Pinang ➔ Madinah', activities: ['Penerbangan Garuda / Saudia, penjemputan khusus lansia dan check-in Daar El Naeem.'] },
+        { day: 1, title: 'Hari 1: Keberangkatan Pangkal Pinang ➔ Jakarta ➔ Madinah', route: 'Pangkal Pinang ➔ Jakarta ➔ Madinah', activities: ['Penerbangan dari Bandara Depati Amir Pangkal Pinang menuju Jakarta, dilanjutkan penerbangan Garuda / Saudia menuju Madinah. Penjemputan khusus lansia dan check-in Daar El Naeem.'] },
         { day: 2, title: 'Hari 2: Ziarah Raudhah & Masjid Nabawi', route: 'Madinah Al-Munawwarah', activities: ['Ziarah Raudhah dengan pendampingan bertahap demi kenyamanan orang tua.'] },
         { day: 3, title: 'Hari 3: Ziarah Kota Madinah', route: 'Madinah Al-Munawwarah', activities: ['Ziarah santai Masjid Quba dan Kebun Kurma.'] },
         { day: 4, title: 'Hari 4: Menuju Makkah & Umrah 1 (Hotel 0 KM)', route: 'Madinah ➔ Makkah', activities: ['Miqat di Bir Ali, check-in Olayan Ajyad (0 KM depan Masjidil Haram), pelaksanaan Umrah 1.'] },
@@ -484,22 +484,9 @@ const DEFAULT_ELMASSA_DATA = {
         { day: 7, title: 'Hari 7: Free City Tour Thaif & Pabrik Parfum', route: 'Makkah ➔ Thaif', activities: ['Wisata udara sejuk Thaif, kunjungan pabrik parfum mawar, dan santap siang Mandhi.'] },
         { day: 8, title: 'Hari 8: Ibadah Mandiri & Doa Khusus', route: 'Makkah Al-Mukarramah', activities: ['Memperbanyak thawaf dan doa bersama orang tua tercinta di pelataran Ka\'bah.'] },
         { day: 9, title: 'Hari 9: Thawaf Wada\' & Transfer Jeddah', route: 'Makkah ➔ Jeddah', activities: ['Thawaf Wada\' dan transfer ke Bandara Jeddah.'] },
-        { day: 10, title: 'Hari 10: Tiba di Jakarta / Pangkal Pinang', route: 'Jeddah ➔ Jakarta / Pangkal Pinang', activities: ['Tiba di Jakarta / Pangkal Pinang dengan kebahagiaan beribadah bersama orang tua tercinta.'] }
+        { day: 10, title: 'Hari 10: Tiba Kembali di Pangkal Pinang', route: 'Jeddah ➔ Jakarta ➔ Pangkal Pinang', activities: ['Tiba di Pangkal Pinang dengan kebahagiaan beribadah bersama orang tua tercinta.'] }
       ],
       schedules: [
-        {
-          id: 'sch-06a',
-          startCity: 'Jakarta',
-          airline: 'Garuda / Saudia',
-          departureDate: '2027-03-15',
-          returnDate: '2027-03-24',
-          duration: 10,
-          price: 34200000,
-          dp: 5000000,
-          availableSeats: 30,
-          roomType: 'Quad Room (Olayan Ajyad 0 KM)',
-          flightType: 'Garuda / Saudia Direct Landing Madinah'
-        },
         {
           id: 'sch-06b',
           startCity: 'Pangkal Pinang',
@@ -510,8 +497,8 @@ const DEFAULT_ELMASSA_DATA = {
           price: 35700000,
           dp: 5000000,
           availableSeats: 30,
-          roomType: 'Quad Room (Olayan Ajyad 0 KM + Tiket PGK)',
-          flightType: 'Connecting PGK ➔ Garuda / Saudia Direct'
+          roomType: 'Quad Room (Olayan Ajyad 0 KM)',
+          flightType: 'Start Pangkal Pinang ➔ Garuda / Saudia Direct'
         }
       ]
     },
@@ -523,8 +510,8 @@ const DEFAULT_ELMASSA_DATA = {
       id: 'pkg-07',
       title: 'Umrah Bersama Ust. Dr. H. Muhammad Kurnia, Lc., M.Ag. (10 Hari)',
       category: 'Umroh Spesial Ustadz',
-      tags: ['Ust. Muhammad Kurnia', 'Tokoh Agama', 'Syawal 2027', 'Hotel 0 KM', 'Free Thaif', '10 Hari', 'Garuda / Saudia'],
-      programSummary: 'Umrah Hebat, Hotel Dekat, Badan Sehat, Ibadah Kuat bersama Tokoh Agama Ust. Dr. H. Muhammad Kurnia, Lc., M.Ag. Keberangkatan Maret 2027 (Syawal setelah Idul Fitri) Program 10 Hari. Maskapai Garuda Indonesia / Saudia Airlines. Hotel Makkah Olayan Ajyad (0 Meter ± 1 Menit Jalan Kaki ke Masjidil Haram) & Hotel Madinah Daar El Naeem. Free City Tour Thaif & Pabrik Parfum Mawar. Kuota Only 35 Seat. DP Mulai 5 Juta Saja.',
+      tags: ['Start Pangkal Pinang', 'Ust. Muhammad Kurnia', 'Tokoh Agama', 'Syawal 2027', 'Hotel 0 KM', 'Free Thaif', '10 Hari', 'Garuda / Saudia'],
+      programSummary: 'Umrah Hebat, Hotel Dekat, Badan Sehat, Ibadah Kuat bersama Tokoh Agama Ust. Dr. H. Muhammad Kurnia, Lc., M.Ag. Keberangkatan Start Pangkal Pinang Maret 2027 (Syawal setelah Idul Fitri) Program 10 Hari. Maskapai Garuda Indonesia / Saudia Airlines. Hotel Makkah Olayan Ajyad (0 Meter ± 1 Menit Jalan Kaki ke Masjidil Haram) & Hotel Madinah Daar El Naeem. Free City Tour Thaif & Pabrik Parfum Mawar. Kuota Only 35 Seat. DP Mulai 5 Juta Saja.',
       flyerUrl: 'images/poster-ust-muhammad-kurnia.png',
       thumbnailUrl: 'images/poster-ust-muhammad-kurnia.png',
       activeStatus: 'Aktif',
@@ -533,7 +520,7 @@ const DEFAULT_ELMASSA_DATA = {
       hotelMadinah: 'Daar El Naeem / Setaraf',
       hotelExtra: 'Free City Tour Thaif & Pabrik Parfum Mawar, Bimbingan Ibadah Khusyuk & Tausiyah',
       itinerary: [
-        { day: 1, title: 'Hari 1: Keberangkatan (Jakarta / Pangkal Pinang) – Madinah', route: 'Jakarta / Pangkal Pinang ➔ Madinah', activities: ['Penerbangan Garuda / Saudia menuju Madinah, check-in hotel Daar El Naeem.'] },
+        { day: 1, title: 'Hari 1: Keberangkatan Pangkal Pinang ➔ Jakarta ➔ Madinah', route: 'Pangkal Pinang ➔ Jakarta ➔ Madinah', activities: ['Penerbangan dari Bandara Depati Amir Pangkal Pinang menuju Jakarta, dilanjutkan Garuda / Saudia menuju Madinah. Check-in hotel Daar El Naeem.'] },
         { day: 2, title: 'Hari 2: Ziarah Raudhah & Masjid Nabawi', route: 'Madinah Al-Munawwarah', activities: ['Sholat di Masjid Nabawi & Ziarah Raudhah Syarifah bersama pembimbing.'] },
         { day: 3, title: 'Hari 3: Ziarah Jejak Sejarah Madinah', route: 'Madinah Al-Munawwarah', activities: ['Ziarah Masjid Quba, Jabal Uhud, dan Perkebunan Kurma Madinah.'] },
         { day: 4, title: 'Hari 4: Menuju Makkah & Pelaksanaan Umrah 1', route: 'Madinah ➔ Makkah', activities: ['Ambil Miqat di Bir Ali, perjalanan darat ke Makkah, check-in Olayan Ajyad (0 KM), pelaksanaan Umrah 1 dibimbing Ust. Dr. H. Muhammad Kurnia.'] },
@@ -542,22 +529,9 @@ const DEFAULT_ELMASSA_DATA = {
         { day: 7, title: 'Hari 7: Free City Tour Thaif & Pabrik Parfum', route: 'Makkah ➔ Thaif', activities: ['Wisata alam pegunungan Thaif, Teleferik, ziarah Masjid Ibnu Abbas, dan kunjungan pabrik parfum mawar.'] },
         { day: 8, title: 'Hari 8: Ibadah Mandiri di Masjidil Haram', route: 'Makkah Al-Mukarramah', activities: ['Memperbanyak thawaf sunnah, iktikaf, dan munajat doa di depan Multazam.'] },
         { day: 9, title: 'Hari 9: Thawaf Wada\' & Transfer Jeddah', route: 'Makkah ➔ Jeddah', activities: ['Thawaf Wada\' di Masjidil Haram dan transfer menuju Bandara Internasional Jeddah.'] },
-        { day: 10, title: 'Hari 10: Tiba di Jakarta / Pangkal Pinang', route: 'Jeddah ➔ Jakarta / Pangkal Pinang', activities: ['Tiba di Indonesia dengan kenangan ibadah umrah mabrur yang penuh keberkahan.'] }
+        { day: 10, title: 'Hari 10: Tiba Kembali di Pangkal Pinang', route: 'Jeddah ➔ Jakarta ➔ Pangkal Pinang', activities: ['Tiba kembali di Pangkal Pinang dengan kenangan ibadah umrah mabrur yang penuh keberkahan.'] }
       ],
       schedules: [
-        {
-          id: 'sch-07a',
-          startCity: 'Jakarta',
-          airline: 'Garuda / Saudia',
-          departureDate: '2027-03-12',
-          returnDate: '2027-03-21',
-          duration: 10,
-          price: 34200000,
-          dp: 5000000,
-          availableSeats: 35,
-          roomType: 'Quad Room (Olayan Ajyad 0 KM)',
-          flightType: 'Garuda / Saudia Direct Landing Madinah'
-        },
         {
           id: 'sch-07b',
           startCity: 'Pangkal Pinang',
@@ -568,8 +542,8 @@ const DEFAULT_ELMASSA_DATA = {
           price: 35700000,
           dp: 5000000,
           availableSeats: 35,
-          roomType: 'Quad Room (Olayan Ajyad 0 KM + Tiket PGK)',
-          flightType: 'Connecting PGK ➔ Garuda / Saudia Direct'
+          roomType: 'Quad Room (Olayan Ajyad 0 KM)',
+          flightType: 'Start Pangkal Pinang ➔ Garuda / Saudia Direct'
         }
       ]
     },
