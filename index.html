@@ -353,7 +353,7 @@
                 <div @click="openPackageDetail(packages.find(p => p.id === 'pkg-01'), getJakartaSchedule(packages.find(p => p.id === 'pkg-01')))"
                      class="group cursor-pointer flex flex-col justify-between bg-white border border-pink-100 hover:border-[#e84370] rounded-[22px] p-2 transition-all duration-300 hover:shadow-md hover:-translate-y-1">
                   <div class="relative aspect-[4/5] rounded-[16px] overflow-hidden bg-[#fff0f4] mb-2">
-                    <img src="images/poster-november-reguler.png?v=202611v2" alt="Umrah Reguler November" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <img src="images/poster-november-reguler.webp?v=202611v3" alt="Umrah Reguler November" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute top-2 left-2 bg-white/95 backdrop-blur-xs px-2 py-0.5 rounded-md text-[8px] font-medium text-[#1f1b1a] shadow-xs">
                       03 Nov 2026
                     </div>
@@ -371,7 +371,7 @@
                 <div @click="openPackageDetail(packages.find(p => p.id === 'pkg-02'), getJakartaSchedule(packages.find(p => p.id === 'pkg-02')))"
                      class="group cursor-pointer flex flex-col justify-between bg-white border border-pink-100 hover:border-[#e84370] rounded-[22px] p-2 transition-all duration-300 hover:shadow-md hover:-translate-y-1">
                   <div class="relative aspect-[4/5] rounded-[16px] overflow-hidden bg-[#fff0f4] mb-2">
-                    <img src="images/poster-november-hanan-attaki.png?v=202611v2" alt="Umrah Ust Hanan Attaki" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <img src="images/poster-november-hanan-attaki.webp?v=202611v3" alt="Umrah Ust Hanan Attaki" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute top-2 left-2 bg-[#e84370] text-white px-2 py-0.5 rounded-md text-[8px] font-medium shadow-xs flex items-center gap-1">
                       <i class="fa-solid fa-star text-[7px]"></i> Spesial
                     </div>
@@ -649,7 +649,7 @@
                 <div>
                   <!-- 4:5 Aspect Ratio Image Box (Instagram Feed Format) -->
                   <div class="relative aspect-[4/5] bg-[#fff0f4] rounded-[22px] overflow-hidden shadow-2xs mb-3">
-                    <img :src="getPackageThumbnail(pkg)" :alt="pkg.title"
+                    <img loading="lazy" decoding="async" :src="getPackageThumbnail(pkg)" :alt="pkg.title"
                          loading="lazy" decoding="async"
                          class="ecom-image w-full h-full object-cover"
                          :class="isPackageLocked(pkg) ? 'grayscale-25 filter blur-[1px]' : ''">
@@ -783,7 +783,7 @@
             <div @click="handleCardClick(pkg)"
                  class="group flex cursor-pointer items-center gap-3.5 rounded-[22px] border border-pink-100 bg-white p-3 shadow-2xs hover:shadow-md hover:border-[#e84370] transition-all">
               <div class="relative h-16 w-16 sm:h-20 sm:w-20 shrink-0 overflow-hidden rounded-[18px] bg-[#fff0f5]">
-                <img :src="getPackageThumbnail(pkg)" class="w-full h-full object-cover">
+                <img loading="lazy" decoding="async" :src="getPackageThumbnail(pkg)" class="w-full h-full object-cover">
               </div>
               <div class="min-w-0 flex-1 space-y-1">
                 <div class="flex items-center gap-1.5">
@@ -933,7 +933,7 @@
               <div class="lg:col-span-4 flex items-start gap-3.5">
                 <div class="relative w-16 sm:w-20 aspect-[4/5] rounded-[18px] overflow-hidden bg-[#fff0f4] shrink-0 border border-pink-100 shadow-2xs cursor-pointer"
                      @click="handleCardClick(pkg)">
-                  <img :src="getPackageThumbnail(pkg)" :alt="pkg.title" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                  <img loading="lazy" decoding="async" :src="getPackageThumbnail(pkg)" :alt="pkg.title" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                        :class="!hasOfficialFlyer(pkg) ? 'grayscale-25 filter blur-[1px]' : ''">
                   
                   <!-- Locked Mini Badge on Thumbnail -->
@@ -1115,7 +1115,7 @@
               <div @click="calculator.packageId = p.id; calculator.selectedScheduleId = ''"
                    class="cursor-pointer p-3 rounded-2xl border transition-all flex items-center gap-3"
                    :class="calculator.packageId === p.id ? 'border-[#e84370] bg-[#fff0f4] shadow-2xs ring-2 ring-[#e84370]/20' : 'border-gray-200 bg-[#fcf9fa] hover:border-pink-300'">
-                <img :src="getPackageThumbnail(p)" class="w-10 h-12 rounded-xl object-cover shrink-0 border border-pink-100">
+                <img loading="lazy" decoding="async" :src="getPackageThumbnail(p)" class="w-10 h-12 rounded-xl object-cover shrink-0 border border-pink-100">
                 <div class="min-w-0 flex-1">
                   <p class="font-medium text-xs text-[#1f1b1a] truncate" :class="calculator.packageId === p.id ? 'text-[#e84370]' : ''" x-text="p.title"></p>
                   <p class="text-[10px] text-gray-500 font-normal" x-text="p.category"></p>
@@ -1819,7 +1819,7 @@
             
             <!-- Poster Thumbnail Preview (Rasio 4:5) -->
             <div class="relative aspect-[4/5] bg-white overflow-hidden m-2.5 rounded-[18px]">
-              <img :src="getScheduleFlyer(sch, selectedPackageForScheduleSelect)" :alt="sch.startCity"
+              <img loading="lazy" decoding="async" :src="getScheduleFlyer(sch, selectedPackageForScheduleSelect)" :alt="sch.startCity"
                    class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
 
               <!-- Top Left Badge: City Tag -->
@@ -1875,7 +1875,7 @@
   <!-- MODAL: ZOOM IMAGE -->
   <div x-show="showZoomImage" x-cloak class="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 font-normal">
     <button @click="showZoomImage = false" class="absolute top-4 right-4 text-white text-2xl"><i class="fa-solid fa-xmark"></i></button>
-    <img :src="activeDetailPackage?.flyerUrl || getPackageThumbnail(activeDetailPackage)" alt="Flyer Zoom"
+    <img :src="cacheBust(activeDetailPackage?.flyerUrl) || getPackageThumbnail(activeDetailPackage)" alt="Flyer Zoom"
          class="max-w-full max-h-[90vh] object-contain rounded-[24px]">
   </div>
 

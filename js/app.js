@@ -526,7 +526,10 @@ function elMassaApp() {
 
     cacheBust(url) {
       if (!url || url.startsWith('data:') || url.startsWith('http')) return url;
-      return url.includes('?') ? url : `${url}?v=202611v2`;
+      // Local posters only exist as .webp now. Package data from the Google
+      // Sheet may still say .png/.jpg, so point those at the .webp file.
+      url = url.replace(/^(images\/poster-[\w-]+)\.(png|jpe?g)(?=$|\?)/i, '$1.webp');
+      return url.includes('?') ? url : `${url}?v=202611v3`;
     },
 
     getPackageThumbnail(pkg) {
@@ -534,9 +537,9 @@ function elMassaApp() {
       let raw = '';
       if (pkg.id === 'pkg-02') {
         if (this.selectedCity && this.selectedCity.toLowerCase().includes('jakarta')) {
-          raw = pkg.flyerUrlJakarta || 'images/poster-november-hanan-attaki-jakarta.png';
+          raw = pkg.flyerUrlJakarta || 'images/poster-november-hanan-attaki-jakarta.webp';
         } else {
-          raw = pkg.flyerUrlPangkalPinang || pkg.flyerUrl || pkg.thumbnailUrl || 'images/poster-november-hanan-attaki.png';
+          raw = pkg.flyerUrlPangkalPinang || pkg.flyerUrl || pkg.thumbnailUrl || 'images/poster-november-hanan-attaki.webp';
         }
       } else if (pkg.thumbnailUrl) {
         raw = pkg.thumbnailUrl;
@@ -554,9 +557,9 @@ function elMassaApp() {
       let raw = '';
       if (p.id === 'pkg-02') {
         if (this.activeSchedule && String(this.activeSchedule.startCity || '').toLowerCase().includes('jakarta')) {
-          raw = p.flyerUrlJakarta || 'images/poster-november-hanan-attaki-jakarta.png';
+          raw = p.flyerUrlJakarta || 'images/poster-november-hanan-attaki-jakarta.webp';
         } else {
-          raw = p.flyerUrlPangkalPinang || p.flyerUrl || 'images/poster-november-hanan-attaki.png';
+          raw = p.flyerUrlPangkalPinang || p.flyerUrl || 'images/poster-november-hanan-attaki.webp';
         }
       } else {
         raw = p.flyerUrl || p.thumbnailUrl || this.defaultKaaba;
@@ -570,9 +573,9 @@ function elMassaApp() {
       let raw = '';
       if (p.id === 'pkg-02') {
         if (sch && String(sch.startCity || '').toLowerCase().includes('jakarta')) {
-          raw = p.flyerUrlJakarta || 'images/poster-november-hanan-attaki-jakarta.png';
+          raw = p.flyerUrlJakarta || 'images/poster-november-hanan-attaki-jakarta.webp';
         } else {
-          raw = p.flyerUrlPangkalPinang || p.flyerUrl || 'images/poster-november-hanan-attaki.png';
+          raw = p.flyerUrlPangkalPinang || p.flyerUrl || 'images/poster-november-hanan-attaki.webp';
         }
       } else {
         raw = p.flyerUrl || p.thumbnailUrl || this.defaultKaaba;
