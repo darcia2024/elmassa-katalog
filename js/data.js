@@ -1294,3 +1294,25 @@ const DEFAULT_ELMASSA_DATA = {
     }
   ]
 };
+
+// -----------------------------------------------------------------------------
+// Sinkron sisa seat otomatis dari sistem El Massa (elmassa-administration).
+// Setiap pengunjung membuka katalog, sisa seat jadwal yang dipetakan di bawah
+// diambil dari booking asli di sistem — tidak perlu update seat manual lagi.
+//
+// Cara memetakan: buka sistem > Jadwal Keberangkatan > "Kelola Grup" pada grup
+// yang sesuai. ID paketnya ada di alamat halaman: /paket/<ID PAKET>.
+// Satu paket sistem boleh dipakai beberapa jadwal (mis. start JKT & PGK);
+// keduanya lalu menampilkan sisa kuota yang sama.
+//
+// Ditaruh di luar DEFAULT_ELMASSA_DATA dengan sengaja: data paket di atas ikut
+// tersimpan di localStorage pengunjung, sedangkan konstanta ini selalu terbaca
+// versi terbaru setiap kali halaman dibuka.
+// -----------------------------------------------------------------------------
+const SEAT_SYNC = {
+  url: 'https://elmassa-administration.vercel.app/api/public/seats',
+  map: {
+    // 'id-jadwal-katalog': 'id-paket-di-sistem',
+    // 'sch-03': 'pkg-desember-2026',
+  }
+};

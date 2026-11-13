@@ -185,6 +185,7 @@ function elMassaApp() {
       }
       this.initFlashSaleTimer();
       this.syncNotifications();
+      this.syncLiveSeats();
 
       // Watchers to reset pagination
       const self = this;
@@ -264,6 +265,48 @@ function elMassaApp() {
         });
       });
       this.schedules = allSch;
+    },
+
+    // Sisa seat live dari sistem El Massa (lihat SEAT_SYNC di data.js). Gagal
+    // atau lambat? Katalog tetap tampil dengan angka bawaan, tanpa error.
+    async syncLiveSeats() {
+      const cfg = (typeof SEAT_SYNC !== 'undefined' && SEAT_SYNC) || {};
+      const map = { ...(cfg.map || {}) };
+      (this.packages || []).forEach(pkg => (pkg.schedules || []).forEach(sch => {
+        if (sch.systemPackageId && !map[sch.id]) map[sch.id] = sch.systemPackageId;
+      }));
+      if (!cfg.url || Object.keys(map).length === 0) return;
+
+      try {
+        const ctrl = new AbortController();
+        const timer = setTimeout(() => ctrl.abort(), 8000);
+        const res = await fetch(cfg.url, { signal: ctrl.signal });
+        clearTimeout(timer);
+        const json = await res.json();
+        if (!json || !json.ok || !Array.isArray(json.data)) return;
+
+        const byId = {};
+        json.data.forEach(row => { byId[row.packageId] = row; });
+
+        let updated = 0;
+        (this.packages || []).forEach(pkg => {
+          if (this.isHajiPackage(pkg)) return; // Haji pakai label teks, bukan angka
+          (pkg.schedules || []).forEach(sch => {
+            const row = byId[map[sch.id]];
+            if (!row) return;
+            sch.availableSeats = Math.max(0, Number(row.remaining) || 0);
+            sch.liveSeats = true;
+            updated++;
+          });
+        });
+
+        if (updated > 0) {
+          this.settings.LAST_SEAT_UPDATE = json.generatedAt || new Date().toISOString();
+          this.rebuildScheduleFlatList();
+        }
+      } catch (err) {
+        console.warn('Sinkron seat dari sistem gagal, memakai data bawaan.', err);
+      }
     },
 
     syncNotifications() {
