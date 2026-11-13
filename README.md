@@ -1,3 +1,5 @@
+> **Pindah:** katalog ini sekarang tinggal di sistem El Massa (repo `elmassa-administration`, folder `public/poster-katalog`) dan dibuka di https://elmassa-administration.vercel.app/poster-katalog. Sisa seat di sana otomatis mengikuti booking di sistem. `index.html` di repo ini hanya meneruskan pengunjung ke alamat baru — edit katalog di repo sistem, bukan di sini.
+
 # 🕋 Galeri Paket Umroh & Haji - El Massa Tour & Travel
 
 Aplikasi web digital showcase & galeri flyer katalog paket Umroh, Haji Khusus, dan Wisata Halal untuk **PT. El Massa Berkah Wisata (El Massa Tour & Travel)**.
